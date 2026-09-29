@@ -3,7 +3,8 @@ import { getSessionUser } from "@/lib/auth";
 import { createClient } from "@/lib/supabase/server";
 import { getDictionary, isValidLocale, type Locale } from "@/lib/i18n";
 import { Header } from "@/components/Header";
-import { BottomNav, Sidebar, navItems } from "@/components/Nav";
+import { BottomNav, Sidebar } from "@/components/Nav";
+import { navItems } from "@/lib/nav";
 
 /** Role-guarded dashboard shell: sidebar on desktop, bottom nav on mobile. */
 export default async function DashboardLayout({
